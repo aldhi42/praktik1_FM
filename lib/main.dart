@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const String appTitle = 'Flutter layout demo';
+    const String appTitle = 'Alam Posong';
     return MaterialApp(
       title: appTitle,
       home: Scaffold(
@@ -27,13 +27,13 @@ class MyApp extends StatelessWidget {
               ),
               TextSection(
                 description:
-                    'Lake Oeschinen lies at the foot of the Blüemlisalp in the '
-                    'Bernese Alps. Situated 1,578 meters above sea level, it '
-                    'is one of the larger Alpine Lakes. A gondola ride from '
-                    'Kandersteg, followed by a half-hour walk through pastures '
-                    'and pine forest, leads you to the lake, which warms to 20 '
-                    'degrees Celsius in the summer. Activities enjoyed here '
-                    'include rowing, and riding the summer toboggan run.',
+                    'kawasan wisata alam Posong yang berada di Desa Tlahab, Kec.Kledung, Kab.Temanggung '
+                    'Lokasi Posong berada di kaki Gunung Sindoro, maka tak heran jika suhu sekitar 10-19°C. '
+                    'Posong juga menjadi destinasi bagi wisatawan yang gemar berburu foto milky way sembari menunggu sunrise.'
+                    'Sebab, lokasi Posong yang berada di ketinggian di atas 1000 mdpl. '
+                    'wisata buka setiap hari mulai pukul 03.30 - 16.00 WIB , juga menawarkan pesona seperti golden sunrise, '
+                    'eksotisme dibalik kabut , panorama alam ,spot selfi , kebun tembakau dan kopi .'
+                    'tempat ini cocok sekali untuk refreshing pikiran dengan menikmati keindahan alam .',
               ),
               ButtonSection(),
             ],
@@ -89,10 +89,10 @@ class TitleSection extends StatelessWidget {
           // #docregion Icon
           Icon(
             Icons.star,
-            color: Colors.red[500],
+            color: Colors.orange[500],
           ),
           // #enddocregion Icon
-          const Text('41'),
+          const Text('90'),
         ],
       ),
     );
@@ -107,7 +107,7 @@ class ButtonSection extends StatelessWidget {
     final Color color = Theme.of(context).primaryColor;
     return SizedBox(
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           ButtonWithText(
             color: color,
@@ -150,7 +150,7 @@ class ButtonWithText extends StatelessWidget {
       children: [
         Icon(icon, color: color),
         Padding(
-          padding: const EdgeInsets.all( 10),
+          padding: const EdgeInsets.all(15),
           child: Text(
             label,
             style: TextStyle(
@@ -176,7 +176,7 @@ class TextSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(32),
+      padding: const EdgeInsets.all(30),
       child: Text(
         description,
         softWrap: true,

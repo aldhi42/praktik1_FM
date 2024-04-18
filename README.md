@@ -3,7 +3,7 @@
 A new Flutter project.
 
 ## Getting Started
-echo "# praktik1_FM"
+
 
 This project is a starting point for a Flutter application.
 
