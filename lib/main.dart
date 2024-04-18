@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const String appTitle = 'Alam Posong';
+    const String appTitle = 'Wisata Temanggung';
     return MaterialApp(
       title: appTitle,
       home: Scaffold(
